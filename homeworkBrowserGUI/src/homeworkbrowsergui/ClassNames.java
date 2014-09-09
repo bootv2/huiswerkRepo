@@ -6,7 +6,7 @@
 
 package homeworkbrowsergui;
 
-import java.util.List;
+import java.util.ArrayList;
 
 
 
@@ -16,18 +16,22 @@ import java.util.List;
  */
 public class ClassNames 
 {
-    static List<String> names;
+    static ArrayList<String> names;
     public void init()
     {
+        names = new ArrayList();
         names.add("P2.26");
         names.add("P2.22");
         names.add("P2.11");
         names.add("P2.8");
         names.add("POWEXAMPLE");
-        names.add("P2.29");
+        names.add("P2.29");//5
         names.add("INTSUMDIFF");
         names.add("HELLOWORLD");
         names.add("CALCULATEDIMENSIONSINTOMM");
+        names.add("EXIT");
+        names.add("E");
+        names.add("Q");
         //end lesson 2
         
         

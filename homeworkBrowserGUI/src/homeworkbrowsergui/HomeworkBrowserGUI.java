@@ -7,10 +7,13 @@
 package homeworkbrowsergui;
 
 import homeworkbrowsergui.secondLesson.P211;
+import homeworkbrowsergui.secondLesson.P222;
+import homeworkbrowsergui.secondLesson.P226;
  
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.util.Scanner;
 import javax.swing.AbstractButton;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -25,27 +28,52 @@ import javax.swing.JPanel;
 public class HomeworkBrowserGUI {//extends JPanel
                         //implements ActionListener{
 
-    static ClassNames names;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) 
     {
-        String classname;
-        //names.init();
-        while(true)
+        boolean exit = false;
+        while(!exit)
         {
-            classname = JOptionPane.showInputDialog("Please enter the name of the class you want to run").toUpperCase();
-            //if(names.getClassId(classname) != -1)
-                break;
-        }
-        int classId = 2;// names.getClassId(classname);
+            Scanner in = new Scanner(System.in);
+            
+            ClassNames names = new ClassNames();
+            String classname;
+            names.init();
+            while(true)
+            {
+                System.out.println("Enter a command!");
+                classname = in.next().toUpperCase();
+                if(names.getClassId(classname) != -1)
+                    break;
+            }
+            int classId = names.getClassId(classname);
         
-        switch(classId)
-        {
-            case 2:
-                P211 p211 = new P211();
-                p211.main();
+            switch(classId)
+            {
+                case 0:
+                    P226 p226 = new P226();
+                    p226.main();
+                    break;
+                case 1:
+                    P222 p222 = new P222();
+                    p222.main();
+                    break;
+                case 2:
+                    P211 p211 = new P211();
+                    p211.main();
+                    break;
+                case 9:
+                    exit = true;
+                    break;
+                case 10:
+                    exit = true;
+                    break;
+                case 11:
+                    exit = true;
+                    break;
+            }
         }
         
     }
