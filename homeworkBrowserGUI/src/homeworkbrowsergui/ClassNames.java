@@ -30,8 +30,10 @@ public class ClassNames
         names.add("HELLOWORLD");
         names.add("CALCULATEDIMENSIONSINTOMM");
         names.add("EXIT");
-        names.add("E");
+        names.add("E");//10
         names.add("Q");
+        names.add("P3.14");
+        names.add("P3.22");
         //end lesson 2
         
         
