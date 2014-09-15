@@ -7,6 +7,7 @@
 package homeworkbrowsergui;
 
 import chapter3.P314;
+import chapter3.P314Hand;
 import chapter3.P322;
 import homeworkbrowsergui.secondLesson.P211;
 import homeworkbrowsergui.secondLesson.P222;
@@ -82,6 +83,10 @@ public class HomeworkBrowserGUI {//extends JPanel
                 case 13:
                     P322 p322 = new P322();
                     p322.run();
+                    break;
+                case 14:
+                    P314Hand p314Hand = new P314Hand();
+                    p314Hand.run();
                     break;
             }
         }

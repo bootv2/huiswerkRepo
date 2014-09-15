@@ -32,9 +32,12 @@ public class ClassNames
         names.add("EXIT");
         names.add("E");//10
         names.add("Q");
+        //end lesson 2
         names.add("P3.14");
         names.add("P3.22");
-        //end lesson 2
+        //end lesson 3
+        names.add("P3.14HAND");
+        
         
         
     }
